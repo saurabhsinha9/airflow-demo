@@ -10,6 +10,6 @@ dag = DAG('hello_ctv', description='Hello CTV DAG',
           schedule_interval='0 12 * * *',
           start_date=datetime(2023, 3, 16), catchup=False)
 
-hello_operator = PythonOperator(task_id='hello_task', python_callable=print_hello, dag=dag)
+hello_task = PythonOperator(task_id='hello_task', python_callable=print_hello, dag=dag)
 
-hello_operator
+hello_task
