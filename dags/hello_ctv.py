@@ -4,7 +4,7 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.python import PythonOperator
 
 def print_hello():
-    return 'Hello ctv from first Airflow DAG!'
+    return 'Hello Guys! from first Airflow DAG!'
 
 dag = DAG('hello_ctv', description='Hello CTV DAG',
           schedule_interval='0 12 * * *',
